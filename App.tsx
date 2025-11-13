@@ -1,0 +1,34 @@
+
+import React, { useState, useEffect } from 'react';
+import { Hero } from './sections/Hero';
+import { Technologies } from './sections/Technologies';
+import { Projects } from './sections/Projects';
+import { Experience } from './sections/Experience';
+import { Contact } from './sections/Contact';
+import { Navbar } from './components/Navbar';
+
+const App: React.FC = () => {
+  return (
+    <div className="relative min-h-screen bg-slate-900 overflow-x-hidden">
+      {/* Background decorative shapes */}
+      <div className="absolute top-0 left-0 w-full h-full z-0">
+        <div className="absolute -top-40 -left-40 w-96 h-96 bg-cyan-500/20 rounded-full filter blur-3xl opacity-50 animate-blob"></div>
+        <div className="absolute top-40 -right-40 w-96 h-96 bg-purple-500/20 rounded-full filter blur-3xl opacity-50 animate-blob animation-delay-2000"></div>
+        <div className="absolute bottom-0 -left-20 w-80 h-80 bg-sky-500/20 rounded-full filter blur-3xl opacity-50 animate-blob animation-delay-4000"></div>
+      </div>
+      
+      <div className="relative z-10">
+        <Navbar />
+        <main className="px-6 md:px-12 lg:px-24">
+          <Hero />
+          <Technologies />
+          <Projects />
+          <Experience />
+          <Contact />
+        </main>
+      </div>
+    </div>
+  );
+};
+
+export default App;
