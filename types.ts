@@ -1,5 +1,4 @@
 // Fix: Import React to resolve namespace errors.
-import React from 'react';
 
 export interface Technology {
   name: string;
