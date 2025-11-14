@@ -21,7 +21,7 @@ export const projects: Project[] = [
   {
     title: 'Medical Clinic Management System',
     description: 'A multi-layer application based on Microservices architecture, featuring secure RESTful services and an intuitive Angular front-end. Includes a complete testing strategy and CI/CD pipeline.',
-    image: 'https://picsum.photos/seed/medical-clinic/800/600',
+    image: 'assets/images/prj/medical.png',
     techStack: ['Java', 'Spring Boot', 'PostgreSQL', 'Angular', 'Docker', 'Jenkins', 'Tailwind CSS'],
     githubUrl: 'https://github.com/nizarfikhan',
   },
