@@ -1,6 +1,7 @@
 
 import React, { useRef } from 'react';
 import { useOnScreen } from '../hooks/useOnScreen';
+import profil from '../assets/images/profil.png';
 
 export const Hero: React.FC = () => {
     const ref = useRef<HTMLDivElement>(null);
@@ -31,7 +32,7 @@ export const Hero: React.FC = () => {
                     <div className="relative w-64 h-64 sm:w-80 sm:h-80 mx-auto">
                          <div className="absolute inset-0 bg-gradient-to-br from-cyan-400 to-purple-600 rounded-full blur-xl animate-pulse"></div>
                          <img 
-                             src="assets/images/profil.png" 
+                             src={profil} 
                              alt="Nizar Fikhane" 
                              className="relative w-full h-full object-cover rounded-full shadow-2xl border-4 border-slate-800"
                          />

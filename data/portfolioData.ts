@@ -1,5 +1,11 @@
 
 import { Technology, Project, ExperienceItem } from '../types';
+import medical from '../assets/images/prj/medical.png';
+import cartox from '../assets/images/prj/cartox.png';
+import attendance from '../assets/images/prj/Attendance.png';
+import k8s from '../assets/images/prj/k8s.png';
+import kubernets from '../assets/images/icons/kubernets.svg';
+import mysql from '../assets/images/icons/mysql-logo-pure.svg';
 
 // Data
 export const technologies: Technology[] = [
@@ -10,10 +16,10 @@ export const technologies: Technology[] = [
   { name: 'Node.js', description: 'A back-end JavaScript runtime for scalable network applications.', icon: 'https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg' },
   { name: 'Python', description: 'Versatile language used for scripting, web back-ends, and more.', icon: 'https://cdn.worldvectorlogo.com/logos/python-5.svg' },
   { name: 'Docker', description: 'Platform for developing, shipping, and running applications in containers.', icon: 'https://cdn.worldvectorlogo.com/logos/docker.svg' },
-  { name: 'Kubernetes', description: 'Automates deployment, scaling, and management of containerized applications.', icon: 'assets/images/icons/kubernets.svg' },
+  { name: 'Kubernetes', description: 'Automates deployment, scaling, and management of containerized applications.', icon: kubernets },
   { name: 'PostgreSQL', description: 'A powerful, open-source object-relational database system.', icon: 'https://cdn.worldvectorlogo.com/logos/postgresql.svg' },
   { name: 'MongoDB', description: 'A NoSQL database for storing large amounts of unstructured data.', icon: 'https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg' },
-  { name: 'MySQL', description: 'An open-source relational database management system.', icon: 'assets/images/icons/mysql-logo-pure.svg' },
+  { name: 'MySQL', description: 'An open-source relational database management system.', icon: mysql },
   { name: 'Jenkins', description: 'An open-source automation server for CI/CD pipelines.', icon: 'https://cdn.worldvectorlogo.com/logos/jenkins-1.svg' },
 ];
 
@@ -21,28 +27,28 @@ export const projects: Project[] = [
   {
     title: 'Medical Clinic Management System',
     description: 'A multi-layer application based on Microservices architecture, featuring secure RESTful services and an intuitive Angular front-end. Includes a complete testing strategy and CI/CD pipeline.',
-    image: 'assets/images/prj/medical.png',
+    image: medical,
     techStack: ['Java', 'Spring Boot', 'PostgreSQL', 'Angular', 'Docker', 'Jenkins', 'Tailwind CSS'],
     githubUrl: 'https://github.com/nizarfikhan',
   },
   {
     title: 'Car Rental System',
     description: 'A full-stack web application for vehicle rental management, designed with an MVC architecture. Features a secure and optimized relational database for managing reservations and vehicles.',
-    image: 'assets/images/prj/cartox.png',
+    image: cartox,
     techStack: ['Java', 'Spring Boot', 'Spring Security', 'MySQL', 'React', 'Tailwind CSS'],
     githubUrl: 'https://github.com/nizarfikhan',
   },
   {
     title: 'Attendance Management Platform',
     description: 'A collaborative web application for student attendance tracking, providing a centralized system for professors. Features automated deployment via Docker and Jenkins.',
-    image: 'assets/images/prj/Attendance.png',
+    image: attendance,
     techStack: ['Java', 'Spring Boot', 'React', 'MongoDB', 'Docker', 'Jenkins', 'Tailwind CSS'],
     githubUrl: 'https://github.com/nizarfikhan',
   },
    {
     title: 'DevOps Project',
     description: 'A full-stack Kubernetes orchestration project deploying a containerized MERN application with persistent storage, autoscaling (HPA), load balancing, and a complete CI-ready Dev stack using Docker, Minikube, React, Node.js, and MongoDB.',
-    image: 'assets/images/prj/k8s.png',
+    image: k8s,
     techStack: ['Docker', 'Kubernetes', 'Minikube', 'React', 'Node.js', 'MongoDB'],
     githubUrl: 'https://github.com/nizarfikhan',
   }
