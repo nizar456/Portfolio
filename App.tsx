@@ -1,5 +1,4 @@
 
-import React, { useState, useEffect } from 'react';
 import { Hero } from './sections/Hero';
 import { Technologies } from './sections/Technologies';
 import { Projects } from './sections/Projects';
